@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".queue.QueueMainActivity2"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <!--<EditText-->
+        <!--android:id="@+id/edittext_zxing"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="输入需要生成二维码的内容" />-->
+    <EditText
+        android:id="@+id/project_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="设备id"/>
+    <EditText
+        android:id="@+id/project_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="设备名称"/>
+    <EditText
+        android:id="@+id/project_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="设备是否可用"/>
+
+    <Button
+        android:id="@+id/button_zxing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成新的设备二维码" />
+
+    <ImageView
+        android:id="@+id/imageView_zxing"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启扫一扫(zxing自带扫码界面)"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_native"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试扫描二维码"
+        />
+
+
+    <TextView
+        android:id="@+id/textview_zxing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫码的结果" />
+
+</LinearLayout>

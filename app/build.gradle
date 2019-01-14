@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.huangfuren.amusementparkmanagementsystem"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '26.0.2'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.0.0'
+    //一个不同的美丽浮动编辑文本 edittext
+    implementation 'com.github.florent37:materialtextfield:1.0.7'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    //有趣的toast
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+    //titlebar
+    implementation 'com.hjq:titlebar:3.5'
+    //okhttp3
+    //compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    //fastjson
+    compile 'com.alibaba:fastjson:1.1.68.android'
+    //okhttp封装
+    compile 'com.github.zhaokaiqiang.okhttpplus:library:1.0.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestCompile('com.android.support:support-annotations:26.1.0') {
+        force = true
+    }
+    implementation files('libs/BaiduLBS_Android.jar')
+    //二维码识别
+    //    compile('com.journeyapps:zxing-android-embedded:3.6.0') { transitive = false }
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+    compile 'com.google.zxing:core:3.3.0'
+    //Nifty模式对话框效果
+    compile 'com.github.sd6352051:NiftyDialogEffects:v1.0.3'
+}

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">APMS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="news">新闻活动</string>
+    <string name="ticket">在线购票</string>
+    <string name="map">乐园地图</string>
+    <string name="queue">在线排队</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

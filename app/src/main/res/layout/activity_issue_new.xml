@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.huangfuren.amusementparkmanagementsystem.ticket.TicketActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/news_image_new"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:src="@drawable/normal"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@color/skyblue">
+
+            <TextView
+                android:id="@+id/ticket_date_text"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:text="标题："
+                android:textSize="@dimen/dp_18" />
+
+            <EditText
+                android:id="@+id/news_title_new"
+                android:layout_width="@dimen/dp_250"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/textview_bg"
+                android:gravity="center_vertical"
+                android:radius="@dimen/dp_5"
+                android:hint="标题狗"
+                android:textSize="@dimen/dp_24"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@color/skyblue">
+
+            <TextView
+                android:id="@+id/ticket_type_text"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:text="类型："
+                android:textSize="@dimen/dp_18" />
+
+            <Spinner
+                android:id="@+id/news_type_new"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/textview_bg"
+                android:entries="@array/news"
+                android:gravity="center_vertical"
+                android:radius="@dimen/dp_5"
+                android:text="新闻"
+                android:textSize="@dimen/dp_24"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:background="@color/skyblue"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ticket_name_text"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:text="内容"
+                android:textSize="@dimen/dp_18" />
+
+            <EditText
+                android:id="@+id/news_body_new"
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="match_parent"
+                android:gravity="left|start"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/textview_bg"
+                android:radius="@dimen/dp_5"
+                android:hint="发点啥呢"
+                android:textSize="@dimen/dp_16"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/skyblue"
+            android:text="发布" />
+    </LinearLayout>
+</LinearLayout>

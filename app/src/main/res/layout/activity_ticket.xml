@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huangfuren.amusementparkmanagementsystem.ticket.TicketActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/ticket_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:src="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ticket_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@color/skyblue">
+
+            <TextView
+                android:id="@+id/ticket_date_text"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_70"
+                android:text="选择日期："
+                android:textSize="@dimen/dp_24" />
+
+            <TextView
+                android:id="@+id/ticket_date_data"
+                android:layout_width="@dimen/dp_136"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:background="@drawable/textview_bg"
+                android:gravity="center_vertical"
+                android:radius="@dimen/dp_5"
+                android:text="2018-12-12"
+                android:textSize="@dimen/dp_24"></TextView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:id="@+id/ticket_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@color/skyblue">
+
+            <TextView
+                android:id="@+id/ticket_type_text"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_70"
+                android:text="选择票种："
+                android:textSize="@dimen/dp_24" />
+
+            <Spinner
+                android:id="@+id/ticket_type_data"
+                android:layout_width="@dimen/dp_136"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:background="@drawable/textview_bg"
+                android:gravity="center_vertical"
+                android:radius="@dimen/dp_5"
+                android:text="日场票"
+                android:entries="@array/type"
+                android:textSize="@dimen/dp_24"></Spinner>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:id="@+id/ticket_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@color/skyblue">
+
+            <TextView
+                android:id="@+id/ticket_name_text"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_70"
+                android:text="姓       名："
+                android:textSize="@dimen/dp_24" />
+
+            <EditText
+                android:id="@+id/ticket_name_data"
+                android:layout_width="@dimen/dp_136"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:background="@drawable/textview_bg"
+                android:gravity="center_vertical"
+                android:radius="@dimen/dp_5"
+                android:text="黄夫人"
+                android:textSize="@dimen/dp_24"></EditText>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:id="@+id/ticket_idcard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@color/skyblue">
+
+            <TextView
+                android:id="@+id/ticket_idcard_text"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_70"
+                android:text="身份证号："
+                android:textSize="@dimen/dp_24" />
+
+            <EditText
+                android:id="@+id/ticket_idcard_data"
+                android:layout_width="@dimen/dp_136"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:background="@drawable/textview_bg"
+                android:gravity="center_vertical"
+                android:radius="@dimen/dp_5"
+                android:text="654321199708125412"
+                android:textSize="@dimen/dp_12"></EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buy"
+            android:background="@color/skyblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即购买"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>

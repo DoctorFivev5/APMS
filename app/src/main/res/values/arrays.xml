@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>日场票</item>
+        <item>夜场票</item>
+        <item>全天票</item>
+        <item>季  票</item>
+        <item>年  票</item>
+    </string-array>
+
+    <string-array name="place">
+        <item>南昌主题乐园</item>
+        <item>峡谷漂流</item>
+        <item>云霄飞车</item>
+        <item>竹林绿蟒</item>
+        <item>世外桃源</item>
+        <item>龙飞凤舞</item>
+    </string-array>
+
+    <string-array name="project">
+        <item>峡谷漂流</item>
+        <item>云霄飞车</item>
+        <item>竹林绿蟒</item>
+        <item>世外桃源</item>
+        <item>龙飞凤舞</item>
+    </string-array>
+
+    <string-array name="news">
+        <item>活动</item>
+        <item>新闻</item>
+    </string-array>
+
+    <string-array name="fix">
+        <item>一般</item>
+        <item>加急</item>
+    </string-array>
+</resources>
